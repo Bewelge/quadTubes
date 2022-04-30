@@ -198,8 +198,8 @@ I used these varying orbits to create the soft looking transitions between the i
 <div class="noBreak"><a href="https://www.fxhash.xyz/gentk/639303">#163 </a><a> &nbsp;&&nbsp;</a> <a href="https://www.fxhash.xyz/gentk/638976"> #141</a> </div> 
 Varying orbital periods
 <div class="imgRow">
-	<img src="./img/163.png"/>
-	<img src="./img/141.png"/>
+	<a><img src="./img/163.png"/></a>
+	<a><img src="./img/141.png"/></a>
 </div>
 </div>
 
