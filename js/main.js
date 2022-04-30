@@ -198,8 +198,8 @@ I used these varying orbits to create the soft looking transitions between the i
 <div class="noBreak"><a href="https://www.fxhash.xyz/gentk/639303">#163 </a><a> &nbsp;&&nbsp;</a> <a href="https://www.fxhash.xyz/gentk/638976"> #141</a> </div> 
 Varying orbital periods
 <div class="imgRow">
-	<a href="163.png"><img src="./img/163.png"/></a>
-	<a href="141.png"><img src="./img/141.png"/></a>
+	<img src="./img/163.png"/>
+	<img src="./img/141.png"/>
 </div>
 </div>
 
@@ -264,13 +264,13 @@ For this piece, it was my intention to display a wide arrange of different style
 
  
 
-<div class="imgCont"><div class="imgRow"><a href="flower4.png"> <img src="./img/flower4.png"/></a> <a href="flower9.png"> <img src="./img/flower9.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="flower2.png"> <img src="./img/flower2.png"/></a> <a href="flower3.png"> <img src="./img/flower3.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="flower0.png"> <img src="./img/flower0.png"/></a> <a href="flower5.png"> <img src="./img/flower5.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="flower1.png"> <img src="./img/flower1.png"/></a> <a href="flower6.png"> <img src="./img/flower6.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="flower10.png"> <img src="./img/flower10.png"/></a> <a href="flower11.png"> <img src="./img/flower11.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="bamboo0.png"> <img src="./img/bamboo0.png"/></a> <a href="bamboo1.png"> <img src="./img/bamboo1.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="bamboo2.png"> <img src="./img/bamboo2.png"/></a> <a href="bamboo3.png"> <img src="./img/bamboo3.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/flower4.png"> <img src="./img/flower4.png"/></a> <a href="./img/flower9.png"> <img src="./img/flower9.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/flower2.png"> <img src="./img/flower2.png"/></a> <a href="./img/flower3.png"> <img src="./img/flower3.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/flower0.png"> <img src="./img/flower0.png"/></a> <a href="./img/flower5.png"> <img src="./img/flower5.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/flower1.png"> <img src="./img/flower1.png"/></a> <a href="./img/flower6.png"> <img src="./img/flower6.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/flower10.png"> <img src="./img/flower10.png"/></a> <a href="./img/flower11.png"> <img src="./img/flower11.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/bamboo0.png"> <img src="./img/bamboo0.png"/></a> <a href="./img/bamboo1.png"> <img src="./img/bamboo1.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/bamboo2.png"> <img src="./img/bamboo2.png"/></a> <a href="./img/bamboo3.png"> <img src="./img/bamboo3.png"/></a> </div> </div>
 
 
 </br>
