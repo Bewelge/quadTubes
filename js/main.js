@@ -305,7 +305,7 @@ opentype.load("./fonts/OfficeCodePro-Medium.ttf", function (err, font) {
 	if (err) {
 		// alert("Font could not be loaded: " + err)
 	} else {
-		fontPath = font.getPath("QuadTubes", 50, 320, 200)
+		fontPath = font.getPath("QuadTubes", 50, 260, 200)
 
 		fontPath.commands.forEach((p, i) => {
 			if (p.hasOwnProperty("x")) {
