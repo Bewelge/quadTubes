@@ -292,11 +292,11 @@ For now: here's a swan and some more abstract outputs:
 
 </br>
 </br>
-<div class="imgCont"><div class="imgRow"><a href="abstract0.png"> <img src="./img/abstract0.png"/></a> <a href="abstract1.png"> <img src="./img/abstract1.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="abstract2.png"> <img src="./img/abstract2.png"/></a> <a href="abstract3.png"> <img src="./img/abstract3.png"/></a> </div> </div>
- <div class="imgCont"><div class="imgRow"><a href="abstract4.png"> <img src="./img/abstract4.png"/></a> <a href="abstract5.png"> <img src="./img/abstract5.png"/></a> </div> </div>
- <div class="imgCont"><div class="imgRow"><a href="abstract8.png"> <img src="./img/abstract8.png"/></a> <a href="abstract12.png"> <img src="./img/abstract12.png"/></a> </div> </div>
-<div class="imgCont"><div class="imgRow"><a href="abstract10.png"> <img src="./img/abstract10.png"/></a> <a href="abstract11.png"> <img src="./img/abstract11.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/abstract0.png"> <img src="./img/abstract0.png"/></a> <a href="./img/abstract1.png"> <img src="./img/abstract1.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/abstract2.png"> <img src="./img/abstract2.png"/></a> <a href="./img/abstract3.png"> <img src="./img/abstract3.png"/></a> </div> </div>
+ <div class="imgCont"><div class="imgRow"><a href="./img/abstract4.png"> <img src="./img/abstract4.png"/></a> <a href="./img/abstract5.png"> <img src="./img/abstract5.png"/></a> </div> </div>
+ <div class="imgCont"><div class="imgRow"><a href="./img/abstract8.png"> <img src="./img/abstract8.png"/></a> <a href="./img/abstract12.png"> <img src="./img/abstract12.png"/></a> </div> </div>
+<div class="imgCont"><div class="imgRow"><a href="./img/abstract10.png"> <img src="./img/abstract10.png"/></a> <a href="./img/abstract11.png"> <img src="./img/abstract11.png"/></a> </div> </div>
  
 `
 
