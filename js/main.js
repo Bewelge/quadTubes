@@ -156,9 +156,7 @@ Let's now see what happens if we keep speed constant but vary the iterations val
 <pre >
 iterations = rndInt(10,100)
 </pre>
-</div>
-</br>
-</br>
+</div> 
 
 <div id="canvas3"></div>
 
