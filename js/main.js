@@ -283,7 +283,7 @@ I'll keep experimenting with this and hopefully see others find new variations a
 You can also try using straight lines or bezier curves, it's not necessarily limited to quadratic curves. Or make the points move in a different pattern (eg ellipse, straight lines, along a curve). 
 </br>
 </br>
-For now: here's a swan and some more abstract outputs I came up with:
+For now: here's a swan and some more abstract outputs:
 
 </br>
 </br>
@@ -299,28 +299,6 @@ For now: here's a swan and some more abstract outputs I came up with:
 <div class="imgCont"><div class="imgRow"><a href="abstract10.png"> <img src="./img/abstract10.png"/></a> <a href="abstract11.png"> <img src="./img/abstract11.png"/></a> </div> </div>
  
 `
-
-var fontPath
-opentype.load("./fonts/OfficeCodePro-Medium.ttf", function (err, font) {
-	if (err) {
-		// alert("Font could not be loaded: " + err)
-	} else {
-		fontPath = font.getPath("QuadTubes", 50, 260, 200)
-
-		fontPath.commands.forEach((p, i) => {
-			if (p.hasOwnProperty("x")) {
-				let iterations = rndInt(70, 100)
-				let turns = 1
-				p.speed = i % 2 == 0 ? 0.2 : rndFloat(0.2, 0.3)
-
-				p.angleChange = (PI2 / iterations) * rndFloat(0.5, 1)
-				p.angle = i % 2 == 0 ? 0 : 0
-				p.iterations = iterations * turns
-				p.ticker = 0
-			}
-		})
-	}
-})
 
 let text0Div = createTextDiv(text0)
 document.body.appendChild(text0Div)
@@ -719,14 +697,36 @@ let canvas9 = new CodePreview({
 document.getElementById("canvas9").appendChild(canvas9.getDiv())
 
 initBg()
+
+var fontPath
+opentype.load("./fonts/OfficeCodePro-Medium.ttf", function (err, font) {
+	if (err) {
+		// alert("Font could not be loaded: " + err)
+	} else {
+		fontPath = font.getPath("QuadTubes", 50, 260, 200)
+
+		let iterations = rndInt(70, 100)
+		fontPath.commands.forEach((p, i) => {
+			if (p.hasOwnProperty("x")) {
+				let turns = 1
+				p.speed = i % 2 == 0 ? 0.2 : rndFloat(0.2, 0.7)
+
+				p.angleChange = PI2 / iterations
+				p.angle = i % 2 == 0 ? -PI : 0
+				p.iterations = iterations * turns
+				p.ticker = 0
+			}
+		})
+	}
+})
 function render() {
 	if (paused) {
 		window.requestAnimationFrame(render)
 		return
 	}
 	if (fontPath) {
-		c.strokeStyle = rndFloat() < 0.5 ? "rgba(0,15,0,1)" : "rgba(0,0,0,1)"
-		c.lineWidth = 0.1
+		c.strokeStyle = rndFloat() < 0.5 ? "rgba(0,150,0,.5)" : "rgba(0,0,0,1)"
+		c.lineWidth = 0.05
 		let amountToDraw = 0
 		fontPath.commands.forEach(p => {
 			try {
@@ -743,11 +743,8 @@ function render() {
 			c.stroke(new Path2D(fontPath.toPathData()))
 		}
 	}
-	for (let i = 0; i < 10; i++) {
-		// quadTubes.forEach(tube => tube.render(c))
-	}
+
 	window.requestAnimationFrame(render)
 }
 
-window.addEventListener("click", render)
 render()
