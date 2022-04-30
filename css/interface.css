@@ -13,6 +13,7 @@ body {
 
 .text {
 	margin: 2em;
+	margin-top: -2em;
 	text-align: left;
 	max-width: 900px;
 }

@@ -303,19 +303,14 @@ For now: here's a swan and some more abstract outputs I came up with:
 var fontPath
 opentype.load("./fonts/OfficeCodePro-Medium.ttf", function (err, font) {
 	if (err) {
-		alert("Font could not be loaded: " + err)
+		// alert("Font could not be loaded: " + err)
 	} else {
-		// Now let's display it on a canvas with id "canvas"
-
-		// Construct a Path object containing the letter shapes of the given text.
-		// The other parameters are x, y and fontSize.
-		// Note that y is the position of the baseline.
-		fontPath = font.getPath("QuadTubes", 10, 300, 200)
+		fontPath = font.getPath("QuadTubes", 50, 320, 200)
 
 		fontPath.commands.forEach((p, i) => {
 			if (p.hasOwnProperty("x")) {
 				let iterations = rndInt(70, 100)
-				let turns = 2
+				let turns = 1
 				p.speed = i % 2 == 0 ? 0.2 : rndFloat(0.2, 0.3)
 
 				p.angleChange = (PI2 / iterations) * rndFloat(0.5, 1)
@@ -324,12 +319,6 @@ opentype.load("./fonts/OfficeCodePro-Medium.ttf", function (err, font) {
 				p.ticker = 0
 			}
 		})
-
-		// let svgPath = new Path2D(fontPath.toPathData())
-		// c.lineWidth = 1
-		// c.stroke(svgPath)
-		// If you just want to draw the text you can also use font.draw(ctx, text, x, y, fontSize).
-		// path.draw(c)
 	}
 })
 
@@ -728,35 +717,7 @@ let canvas9 = new CodePreview({
 	points: swan
 })
 document.getElementById("canvas9").appendChild(canvas9.getDiv())
-// let canvas77 = new CodePreview({
-// 	renderPoints: true,
-// 	speed: i => 5,
-// 	angle: i => (i % 2 == 0 ? 0 : -PI05 * 0.5),
-// 	iterations: () => 100,
-// 	lineWidth: 0.1,
-// 	infinite: true,
-// 	stopOnClick: true
-// })
-// document.getElementById("canvas7").appendChild(canvas7.getDiv())
 
-// let points = []
-// let pointAmount = 10
-// let x = 50 + width / (pointAmount * 2)
-// let y = height / 2
-// for (let i = 0; i < pointAmount; i++) {
-// 	let iterations = rndInt(200, 200)
-// 	let point = {
-// 		x: x + ((width - 100) / 10) * i,
-// 		y: height / 2 + 200 - (i % 2) * 400,
-// 		angleChange: (PI2 / iterations) * rndFloat(1, 1),
-// 		speed: 5,
-// 		angle: rndAng(),
-// 		iterations: Infinity //iterations + 1
-// 	}
-// 	points.push(new Point(point))
-// }
-// let quadTubes = []
-// quadTubes.push(new QuadTube(points, { lineWidth: 0.01 }))
 initBg()
 function render() {
 	if (paused) {
@@ -765,7 +726,6 @@ function render() {
 	}
 	if (fontPath) {
 		c.strokeStyle = rndFloat() < 0.5 ? "rgba(0,15,0,1)" : "rgba(0,0,0,1)"
-		// c.globalCompositeOperation = rndFloat() < 0.5 ? "screen" : "overlay"
 		c.lineWidth = 0.1
 		let amountToDraw = 0
 		fontPath.commands.forEach(p => {
